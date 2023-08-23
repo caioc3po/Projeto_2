@@ -116,6 +116,10 @@ nav li a {
     column-gap: 2.5%;
 }
 
+.lista-produtos article p {
+    height: 50px;
+}
+
 .lista-produtos article img {
     width: 100%;
 }
@@ -136,6 +140,47 @@ button {
 
 @media screen and (max-width: 767px) {
     
+    header {
+        background-color: brown;
+        height: 120px;
+        position: static;
+        top: 0;
+        left: 0;
+        z-index: 1;
+    }
+
+    header .container h1 {
+        color: white;
+        font-size: 25px;
+        border-bottom: 2px solid white;
+        margin: 0 auto;
+    }
+
+    .menu-hamburguer {
+        display: none;
+        cursor: pointer;
+    }
+
+    nav {
+        height: 50px;
+        margin-top: 10px;
+        padding: 0px;
+        background-color: #690303;
+        display: block;
+        z-index: 1;
+    }
+    
+    nav li {
+        list-style: none;
+        margin-top: 0px;
+        padding-top: 0px;
+        display: inline;
+        margin-right: 16px;
+        font-size: 18px;
+        font-weight: bold;
+        text-transform: uppercase;
+    }
+
     .container  {
         max-width: 90%;
     }
@@ -146,9 +191,16 @@ button {
 
     #about .container .sobre-a-loja p {
         margin: 15px 0;
-        width: 600px;
+        width: 300px;
         display: flex;
         font-size: 20px;
+    }
+    
+    .sobre-a-loja img {
+        height: 300px;
+        width: 300px;
+        border: 2px solid black;
+        border-radius: 15px;
     }
 
     .lista-produtos {
@@ -157,6 +209,7 @@ button {
         column-gap: 10%;
     }
 
+    
     .lista-produtos article {
         margin-bottom: 50px;
     }
@@ -194,6 +247,7 @@ button {
     
     .sobre-a-loja {
         display: flex;
+        align-items: center;
     }
     
     .sobre-a-loja .text {
@@ -208,7 +262,8 @@ button {
     }
     
     .sobre-a-loja img {
-        width: 500px;
+        height: 350px;
+        width: 350px;
         border: 2px solid black;
         border-radius: 15px;
     }
